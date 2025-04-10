@@ -29,7 +29,6 @@
             this.lab_tieude = new System.Windows.Forms.Label();
             this.lb01 = new System.Windows.Forms.Label();
             this.btn_search = new System.Windows.Forms.Button();
-            this.pic_icon = new System.Windows.Forms.PictureBox();
             this.header = new System.Windows.Forms.Panel();
             this.icon_logo = new System.Windows.Forms.PictureBox();
             this.lb02 = new System.Windows.Forms.Label();
@@ -50,7 +49,8 @@
             this.lab_thoigian = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.btn_chitiet01 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_logo)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +75,8 @@
             // 
             this.tbCity.BackColor = System.Drawing.SystemColors.MenuBar;
             this.tbCity.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCity.Location = new System.Drawing.Point(257, 84);
+            this.tbCity.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.tbCity.Location = new System.Drawing.Point(241, 86);
             this.tbCity.Margin = new System.Windows.Forms.Padding(2);
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(320, 30);
@@ -83,37 +84,37 @@
             // 
             // lab_tieude
             // 
-            this.lab_tieude.AutoSize = true;
             this.lab_tieude.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lab_tieude.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.lab_tieude.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lab_tieude.Location = new System.Drawing.Point(37, 5);
+            this.lab_tieude.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lab_tieude.Location = new System.Drawing.Point(307, 4);
             this.lab_tieude.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lab_tieude.Name = "lab_tieude";
-            this.lab_tieude.Size = new System.Drawing.Size(153, 22);
+            this.lab_tieude.Size = new System.Drawing.Size(197, 26);
             this.lab_tieude.TabIndex = 2;
-            this.lab_tieude.Text = "Dự báo thời tiết";
+            this.lab_tieude.Text = "Dự Báo Thời Tiết\r\n\r\n\r\n";
             this.lab_tieude.Click += new System.EventHandler(this.lab_tieude_Click);
             // 
             // lb01
             // 
             this.lb01.AutoSize = true;
-            this.lb01.BackColor = System.Drawing.Color.Transparent;
+            this.lb01.BackColor = System.Drawing.Color.White;
             this.lb01.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Bold);
-            this.lb01.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.lb01.Location = new System.Drawing.Point(76, 84);
+            this.lb01.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb01.Location = new System.Drawing.Point(87, 89);
             this.lb01.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb01.Name = "lb01";
-            this.lb01.Size = new System.Drawing.Size(180, 27);
+            this.lb01.Size = new System.Drawing.Size(135, 27);
             this.lb01.TabIndex = 3;
-            this.lb01.Text = "Tìm thành phố:";
+            this.lb01.Text = "Thành Phố";
+            this.lb01.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btn_search
             // 
-            this.btn_search.BackColor = System.Drawing.Color.Gray;
+            this.btn_search.BackColor = System.Drawing.Color.White;
             this.btn_search.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btn_search.Location = new System.Drawing.Point(577, 84);
+            this.btn_search.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_search.Location = new System.Drawing.Point(620, 89);
             this.btn_search.Margin = new System.Windows.Forms.Padding(2);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(105, 30);
@@ -121,18 +122,6 @@
             this.btn_search.Text = "Tìm kiếm";
             this.btn_search.UseVisualStyleBackColor = false;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
-            // 
-            // pic_icon
-            // 
-            this.pic_icon.BackColor = System.Drawing.Color.Transparent;
-            this.pic_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic_icon.Location = new System.Drawing.Point(54, 164);
-            this.pic_icon.Margin = new System.Windows.Forms.Padding(2);
-            this.pic_icon.Name = "pic_icon";
-            this.pic_icon.Size = new System.Drawing.Size(155, 140);
-            this.pic_icon.TabIndex = 6;
-            this.pic_icon.TabStop = false;
-            this.pic_icon.Click += new System.EventHandler(this.pic_icon_Click);
             // 
             // header
             // 
@@ -151,7 +140,7 @@
             this.icon_logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.icon_logo.Image = ((System.Drawing.Image)(resources.GetObject("icon_logo.Image")));
             this.icon_logo.InitialImage = null;
-            this.icon_logo.Location = new System.Drawing.Point(0, 0);
+            this.icon_logo.Location = new System.Drawing.Point(12, -4);
             this.icon_logo.Name = "icon_logo";
             this.icon_logo.Size = new System.Drawing.Size(40, 30);
             this.icon_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,17 +149,16 @@
             // 
             // lb02
             // 
-            this.lb02.AutoSize = true;
             this.lb02.BackColor = System.Drawing.Color.Transparent;
             this.lb02.Cursor = System.Windows.Forms.Cursors.SizeNESW;
             this.lb02.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
-            this.lb02.ForeColor = System.Drawing.Color.Black;
-            this.lb02.Location = new System.Drawing.Point(7, 149);
+            this.lb02.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb02.Location = new System.Drawing.Point(201, 141);
             this.lb02.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb02.Name = "lb02";
-            this.lb02.Size = new System.Drawing.Size(230, 32);
+            this.lb02.Size = new System.Drawing.Size(129, 37);
             this.lb02.TabIndex = 19;
-            this.lb02.Text = "Thời tiết hiện tại";
+            this.lb02.Text = "Nhiệt độ\r\n\r\n";
             this.lb02.Click += new System.EventHandler(this.lb02_Click);
             // 
             // lab_chitiet
@@ -190,8 +178,8 @@
             this.lb03.AutoSize = true;
             this.lb03.BackColor = System.Drawing.Color.Transparent;
             this.lb03.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb03.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb03.Location = new System.Drawing.Point(438, 195);
+            this.lb03.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb03.Location = new System.Drawing.Point(40, 187);
             this.lb03.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb03.Name = "lb03";
             this.lb03.Size = new System.Drawing.Size(139, 28);
@@ -204,8 +192,8 @@
             this.lb04.AutoSize = true;
             this.lb04.BackColor = System.Drawing.Color.Transparent;
             this.lb04.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb04.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb04.Location = new System.Drawing.Point(440, 225);
+            this.lb04.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb04.Location = new System.Drawing.Point(40, 235);
             this.lb04.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb04.Name = "lb04";
             this.lb04.Size = new System.Drawing.Size(92, 28);
@@ -217,8 +205,8 @@
             this.lb05.AutoSize = true;
             this.lb05.BackColor = System.Drawing.Color.Transparent;
             this.lb05.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb05.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb05.Location = new System.Drawing.Point(440, 255);
+            this.lb05.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb05.Location = new System.Drawing.Point(40, 268);
             this.lb05.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb05.Name = "lb05";
             this.lb05.Size = new System.Drawing.Size(225, 28);
@@ -230,8 +218,8 @@
             this.lb06.AutoSize = true;
             this.lb06.BackColor = System.Drawing.Color.Transparent;
             this.lb06.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb06.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb06.Location = new System.Drawing.Point(440, 285);
+            this.lb06.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb06.Location = new System.Drawing.Point(40, 315);
             this.lb06.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb06.Name = "lb06";
             this.lb06.Size = new System.Drawing.Size(155, 28);
@@ -243,8 +231,8 @@
             this.lb07.AutoSize = true;
             this.lb07.BackColor = System.Drawing.Color.Transparent;
             this.lb07.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb07.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lb07.Location = new System.Drawing.Point(439, 314);
+            this.lb07.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb07.Location = new System.Drawing.Point(40, 366);
             this.lb07.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb07.Name = "lb07";
             this.lb07.Size = new System.Drawing.Size(109, 28);
@@ -359,17 +347,45 @@
             // 
             // btn_chitiet01
             // 
-            this.btn_chitiet01.BackColor = System.Drawing.Color.Gray;
+            this.btn_chitiet01.BackColor = System.Drawing.Color.White;
             this.btn_chitiet01.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_chitiet01.ForeColor = System.Drawing.Color.White;
-            this.btn_chitiet01.Location = new System.Drawing.Point(283, 392);
+            this.btn_chitiet01.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_chitiet01.Location = new System.Drawing.Point(257, 407);
             this.btn_chitiet01.Name = "btn_chitiet01";
-            this.btn_chitiet01.Size = new System.Drawing.Size(270, 50);
+            this.btn_chitiet01.Size = new System.Drawing.Size(270, 36);
             this.btn_chitiet01.TabIndex = 3;
             this.btn_chitiet01.Tag = "";
-            this.btn_chitiet01.Text = "Thông tin thời tiết về 5 ngày tới";
+            this.btn_chitiet01.Text = "Dự báo về 5 ngày ké tiếp";
             this.btn_chitiet01.UseVisualStyleBackColor = false;
             this.btn_chitiet01.Click += new System.EventHandler(this.btn_chitiet01_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(308, 366);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 15);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Khuyến cáo";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Visible = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.IndianRed;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.listBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(388, 197);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(361, 132);
+            this.listBox1.TabIndex = 50;
+            this.listBox1.Visible = false;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -378,6 +394,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 455);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lab_thoigian);
             this.Controls.Add(this.btn_chitiet01);
             this.Controls.Add(this.lab_nhietdo);
@@ -396,7 +414,6 @@
             this.Controls.Add(this.lab_chitiet);
             this.Controls.Add(this.lb02);
             this.Controls.Add(this.header);
-            this.Controls.Add(this.pic_icon);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.lb01);
             this.Controls.Add(this.tbCity);
@@ -406,9 +423,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WeatherApp";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_icon)).EndInit();
             this.header.ResumeLayout(false);
-            this.header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -421,7 +436,6 @@
         private System.Windows.Forms.Label lab_tieude;
         private System.Windows.Forms.Label lb01;
         private System.Windows.Forms.Button btn_search;
-        private System.Windows.Forms.PictureBox pic_icon;
         private System.Windows.Forms.Panel header;
         private System.Windows.Forms.Label lb02;
         private System.Windows.Forms.Label lab_chitiet;
@@ -442,5 +456,7 @@
         private System.Windows.Forms.Label lab_thoigian;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.Button btn_chitiet01;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

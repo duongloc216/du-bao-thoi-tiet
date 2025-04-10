@@ -12,7 +12,7 @@ namespace WeatherApp
     public partial class Form1 : Form
     {
         private Size originalSize;
-        private string APIKey = "4359ef1cd11b4c97b0da50cce76d01e7";
+        private string APIKey = "29e8e546e5ac4f413e3c9ee688325a59";
 
         public Form1()
         {
@@ -28,7 +28,78 @@ namespace WeatherApp
 
         private void btn_search_Click(object sender, EventArgs e)
         {
+          
             getWeather();
+            if (string.IsNullOrEmpty(tbCity.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tên thành phố!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string city = tbCity.Text.Trim(); // Remove any extra whitespace
+            if (string.IsNullOrEmpty(city))
+            {
+                MessageBox.Show("Vui lòng nhập tên thành phố để tìm công ty du lịch!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Clear old items in ListBox before adding new items
+            listBox1.Items.Clear();
+
+            // Display information based on city
+            if (city.Equals("hanoi", StringComparison.OrdinalIgnoreCase))
+            {
+                listBox1.Items.Add("Chào mừng đến với Hà Nội!");
+                listBox1.Items.Add("A Chau Travel");
+                listBox1.Items.Add("Địa chỉ: Số 5, Phố Tràng Tiền, Hà Nội");
+                listBox1.Items.Add("Lịch trình: Tour 2: Hà Nội - Ninh Bình - Hạ Long (4 ngày 3 đêm)");
+                listBox1.Items.Add("Đánh giá: 4.8");
+                listBox1.Items.Add("Website: https://achautravel.com.vn/");
+            }
+            else if (city.Equals("saigon", StringComparison.OrdinalIgnoreCase))
+            {
+                listBox1.Items.Add("Chào mừng đến với Thành phố Hồ Chí Minh!");
+                listBox1.Items.Add("Saigon Travel");
+                listBox1.Items.Add("Địa chỉ: 123 Nguyễn Huệ, Quận 1, TP.HCM");
+                listBox1.Items.Add("Lịch trình: Tour 1: TP.HCM - Vũng Tàu - Cần Giờ (3 ngày 2 đêm)");
+                listBox1.Items.Add("Đánh giá: 4.9");
+                listBox1.Items.Add("Website: https://saigontravel.com.vn/");
+            }
+            else if (city.Equals("quangngai", StringComparison.OrdinalIgnoreCase))
+            {
+                listBox1.Items.Add("Chào mừng đến với Quảng Ngãi!");
+                listBox1.Items.Add("Quang Ngai Travel");
+                listBox1.Items.Add("Địa chỉ: Số 10, Phố Trần Phú, Quảng Ngãi");
+                listBox1.Items.Add("Lịch trình: Tour 1: Quảng Ngãi - Bình Sơn - Lý Sơn (3 ngày 2 đêm)");
+                listBox1.Items.Add("Đánh giá: 4.7");
+                listBox1.Items.Add("Website: https://quangngaitravel.com.vn/");
+            }
+            else if (city.Equals("danang", StringComparison.OrdinalIgnoreCase))
+            {
+                listBox1.Items.Add("Chào mừng đến với Đà Nẵng!");
+                listBox1.Items.Add("Danang Travel");
+                listBox1.Items.Add("Địa chỉ: Số 20, Phố Bạch Đằng, Đà Nẵng");
+                listBox1.Items.Add("Lịch trình: Tour 3: Đà Nẵng - Hội An - Huế (4 ngày 3 đêm)");
+                listBox1.Items.Add("Đánh giá: 4.9");
+                listBox1.Items.Add("Website: https://danangtravel.com.vn/");
+            }
+            else if (city.Equals("london", StringComparison.OrdinalIgnoreCase))
+            {
+                listBox1.Items.Add("Chào mừng đến với London!");
+                listBox1.Items.Add("London Travel");
+                listBox1.Items.Add("Địa chỉ: 123 Oxford Street, London, UK");
+                listBox1.Items.Add("Lịch trình: Tour 4: London - Oxford - Cambridge (6 ngày 5 đêm)");
+                listBox1.Items.Add("Đánh giá: 4.6");
+                listBox1.Items.Add("Website: https://londontravel.com/");
+            }
+            else
+            {
+                // Display message for other cities
+                listBox1.Items.Add($"Không có công ty du lịch tại {city}");
+                listBox1.Items.Add("Chưa có sẵn lịch trình!");
+            }
+            // Show ListBox only if there are items to display
+            listBox1.Visible = listBox1.Items.Count > 0;
         }
 
         private void lb03_Click(object sender, EventArgs e)
@@ -55,11 +126,20 @@ namespace WeatherApp
                         // Assuming we want to display the first forecast entry
                         var forecast = info.List[0];
 
-                        string iconUrl = "https://openweathermap.org/img/w/" + forecast.Weather[0].Icon + ".png";
-                        LoadAndResizeImage(iconUrl);
+                        string iconUrl = "https://openweathermap.org/img/w" +
+                            "" +
+                            "" +
+                            "" +
+                            "" +
+                            "" +
+                            "" +
+                            "/" + forecast.Weather[0].Icon + ".png";
 
-                        lab_ngay01.Text = DateTime.Now.ToString("dd MMMM yyyy");
-                        lab_thoigian.Text = DateTime.Now.ToString("dddd HH:mm:ss");
+
+           
+                        
+
+
 
                         // Translate and display weather information
                         lab_tinhtrang.Text = WeatherTranslator.TranslateMain(forecast.Weather[0].Main);
@@ -70,21 +150,40 @@ namespace WeatherApp
                         // Display temperature in Celsius
                         double tempCelsius = forecast.Main.Temp;
                         lab_nhietdo.Text = $"{tempCelsius.ToString("0.0")} °C";
+                        lab_nhietdo.ForeColor = Color.Black;
+                      
 
                         // Display humidity
-                        lab_doam.Text = $"{forecast.Main.Humidity} %";
+                       // Display humidity
+lab_doam.Text = $"{forecast.Main.Humidity} %";
+lab_doam.ForeColor = Color.Black;  // Set text color to blue
+// Set background color to white
 
-                        // Display pressure
-                        lab_apsuat.Text = $"{forecast.Main.Pressure} hPa";
 
-                        // Display wind gust
-                        lab_giogiat.Text = $"{forecast.Wind.Gust?.ToString("0.00") ?? "N/A"} m/s";
+// Display pressure
+lab_apsuat.Text = $"{forecast.Main.Pressure} hPa";
+lab_apsuat.ForeColor = Color.Black;
 
-                        // Display wind speed
-                        lab_tdgio.Text = $"{forecast.Wind.Speed:0.00} m/s";
 
-                        // Display rainfall
-                        lab_luongmua.Text = $"{forecast.Rain?.Rain1h?.ToString("0.0") ?? "0.0"} mm";
+
+// Display wind gust
+lab_giogiat.Text = $"{forecast.Wind.Gust?.ToString("0.00") ?? "N/A"} m/s";
+lab_giogiat.ForeColor = Color.Black;
+
+
+
+// Display wind speed
+lab_tdgio.Text = $"{forecast.Wind.Speed:0.00} m/s";
+lab_tdgio.ForeColor = Color.Black;
+
+
+
+// Display rainfall
+lab_luongmua.Text = $"{forecast.Rain?.Rain1h?.ToString("0.0") ?? "0.0"} mm";
+lab_luongmua.ForeColor = Color.Black;
+
+
+                        GiveHealthAdvice(tempCelsius, forecast.Main.Humidity, forecast.Wind.Speed);
 
                         // Adjust form size
                         this.Size = originalSize;
@@ -109,7 +208,7 @@ namespace WeatherApp
             lab_doam.Visible = false;
             lab_apsuat.Visible = false;
             lab_giogiat.Visible = false;
-
+            label1.Visible = false;
             lb02.Visible = false;
             lab_chitiet.Visible = false;
             lb03.Visible = false;
@@ -128,7 +227,7 @@ namespace WeatherApp
 
             btn_chitiet01.Visible = false;
 
-            pic_icon.Visible = false;
+         
         }
 
         private void ShowControls()
@@ -141,7 +240,7 @@ namespace WeatherApp
             lab_giogiat.Visible = true;
 
             lb02.Visible = true;
-            lab_chitiet.Visible = true;
+            lab_chitiet.Visible = false;
             lb03.Visible = true;
             lb04.Visible = true;
             lb05.Visible = true;
@@ -159,7 +258,6 @@ namespace WeatherApp
             btn_chitiet01.Visible = true;
 
 
-            pic_icon.Visible = true;
         }
 
         private void LoadAndResizeImage(string url)
@@ -169,14 +267,7 @@ namespace WeatherApp
                 using (WebClient webClient = new WebClient()) // Tạo một instance mới của WebClient
                 {
                     byte[] imageBytes = webClient.DownloadData(url); // Tải dữ liệu hình ảnh từ URL đã chỉ định
-                    using (MemoryStream stream = new MemoryStream(imageBytes)) // Tạo một instance MemoryStream với dữ liệu đã tải về
-                    {
-                        using (Image originalImage = Image.FromStream(stream)) // Tạo một hình ảnh từ MemoryStream
-                        {
-                            // Thay đổi kích thước hình ảnh để phù hợp với PictureBox
-                            pic_icon.Image = ResizeImage(originalImage, pic_icon.Width, pic_icon.Height);
-                        }
-                    }
+                   
                 }
             }
             catch (Exception ex)
@@ -185,7 +276,43 @@ namespace WeatherApp
             }
         }
 
+        void GiveHealthAdvice(double temperature, int humidity, double windSpeed)
+        {
+            string advice = "";
 
+            // Khuyến cáo sức khỏe dựa trên nhiệt độ
+            if (temperature > 25) // Nhiệt độ trên 30°C
+            {
+                advice += "Hãy uống đủ nước và tránh ra ngoài quá lâu, đặc biệt vào giữa ngày khi nhiệt độ cao.\n";
+            }
+            else if (temperature < 10) // Nhiệt độ dưới 10°C
+            {
+                advice += "Hãy mặc ấm và tránh tiếp xúc lâu ngoài trời khi trời lạnh.\n";
+            }
+            else
+            {
+                advice += "Thời tiết này rất phù hợp với việc chơi thể thao và các hoạt động ngoài trời.\n";
+            }
+
+            // Khuyến cáo sức khỏe dựa trên độ ẩm
+            if (humidity > 80) // Độ ẩm trên 80%
+            {
+                advice += "Độ ẩm cao có thể khiến bạn cảm thấy khó chịu, hãy tránh các hoạt động thể chất ngoài trời.\n";
+            }
+            else if (humidity < 30) // Độ ẩm dưới 30%
+            {
+                advice += "Không khí khô có thể gây khô da và vấn đề hô hấp, hãy uống nước thường xuyên.\n";
+            }
+
+            // Khuyến cáo sức khỏe dựa trên tốc độ gió
+            if (windSpeed > 10) // Gió mạnh trên 10m/s
+            {
+                advice += "Gió mạnh có thể gây nguy hiểm, tránh ra ngoài khi gió quá lớn.\n";
+            }
+
+            // Hiển thị khuyến cáo sức khỏe
+            label1.Text = advice;
+        }  // Đảm bảo đóng ngoặc phương thức này
         private Image ResizeImage(Image image, int width, int height)
         {
             Bitmap resizedImage = new Bitmap(width, height);
@@ -274,12 +401,29 @@ namespace WeatherApp
                 }
                 return "Không xác định";
             }
+
         }
+      
 
         private void Form1_Load(object sender, EventArgs e)
         {
             HideControls();
-            this.Size = new Size(791, 140); // Set initial small size
+            
+            this.Size = new Size(781, 500); // Set initial small size
+            lab_nhietdo.Location = new Point(370, 130);
+            lab_tdgio.Location = new Point(200,190);     // Vị trí cho tốc độ gió
+            lab_doam.Location = new Point(200, 230);      // Vị trí cho độ ẩm
+            
+            lab_apsuat.Location = new Point(270, 270);    // Vị trí cho áp suất
+            lab_giogiat.Location = new Point(200, 360);   // Vị trí cho gió giật
+            lab_luongmua.Location = new Point(200, 310);  // Vị trí cho lượng mưa
+
+            lab_tinhtrang.Location = new Point(590, 140);   // Vị trí tình trạng
+
+            label1.Visible = true;
+
+
+
         }
 
         private void tbCity_TextChanged(object sender, EventArgs e)
@@ -292,12 +436,10 @@ namespace WeatherApp
             string city = tbCity.Text;
             Form2 form2 = new Form2(city);
             form2.Show();
+
         }
 
-        private void pic_icon_Click(object sender, EventArgs e)
-        {
-            // Optional: Add logic for icon click event if needed
-        }
+       
 
         private void lb02_Click(object sender, EventArgs e)
         {
@@ -307,6 +449,25 @@ namespace WeatherApp
         private void lab_tieude_Click(object sender, EventArgs e)
         {
 
+        }
+        private void lab_HealthAdvice1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void AdjustUI()
+        {
+            // Đưa Label lên trên cùng
+            label1.BringToFront();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

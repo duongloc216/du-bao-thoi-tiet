@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using AppWeather;
 
 namespace WeatherApp
 {
@@ -47,20 +46,47 @@ namespace WeatherApp
 
         public void displayWeather()
         {
+            temperatureLabel1.Location = new Point(50, 266);
+            temperatureLabel2.Location = new Point(240, 266);
+            temperatureLabel31.Location = new Point(440, 266);
+
+
+
+            label5.Location = new Point(609, 269);
+            label6.Location = new Point(780, 269);
+
+
+
+
+
+            temperatureLabel31.Font = new Font(temperatureLabel31.Font.FontFamily, 16, FontStyle.Bold);
+            temperatureLabel31.BackColor = Color.Transparent;
+            temperatureLabel31.ForeColor = Color.Black;
+
             if (data != null && data.List != null && data.List.Count > 0)
             {
                 var forecasts = data.List
                     .GroupBy(x => DateTime.Parse(x.DtTxt).Date)
                     .Select(g => g.First())
-                    .Skip(1)
-                    .Take(5)
+                    .GroupBy(x => DateTime.Parse(x.DtTxt).Date)
+                    .Select(g => g.First())
+                    .Take(5) // Lấy 5 ngày đầu tiên
+
                     .ToList();
 
-                DisplayForecast(forecasts[0], dateLabel1, temperatureLabel1, weatherIconBox1, detalisBtn1);
-                if (forecasts.Count > 1) DisplayForecast(forecasts[1], dateLabel2, temperatureLabel2, weatherIconBox2, detalisBtn2);
-                if (forecasts.Count > 2) DisplayForecast(forecasts[2], dateLabel3, TemperatureLabel3, weatherIconBox3, detalisBtn3);
-                if (forecasts.Count > 3) DisplayForecast(forecasts[3], dateLabel4, TemperatureLabel4, weatherIconBox4, detalisBtn4);
-                if (forecasts.Count > 4) DisplayForecast(forecasts[4], dateLabel5, TemperatureLabel5, weatherIconBox5, detalisBtn5);
+                DisplayForecast(forecasts[0], dateLabel1, temperatureLabel1, weatherIconBox1, 200, 150);
+                if (forecasts.Count > 1) DisplayForecast(forecasts[1], dateLabel2, temperatureLabel2, weatherIconBox2, 200, 250);
+                if (forecasts.Count > 2) DisplayForecast(forecasts[2], dateLabel3, temperatureLabel31, weatherIconBox3, 200, 350);
+                if (forecasts.Count > 3) DisplayForecast(forecasts[3], dateLabel4, label5, weatherIconBox4, 200, 450);
+                if (forecasts.Count > 4) DisplayForecast(forecasts[4], dateLabel5, label6, weatherIconBox5, 200, 550);
+
+                // ✅ Lấy danh sách nhiệt độ để đưa vào lời khuyên
+                List<double> temps = forecasts.Select(f => f.Main.Temp).ToList();
+                string advice = GenerateAdvice(temps);
+
+                // ✅ Gán lời khuyên vào labelAdvice
+                labelAdvice.Text = advice;
+                labelAdvice.Visible = true;
             }
             else
             {
@@ -68,43 +94,51 @@ namespace WeatherApp
             }
         }
 
-        private void DisplayForecast(WeatherInfo.Forecast forecast, Label dateLabel, Label tempLabel, PictureBox iconBox, Button detailsButton)
+        private void DisplayForecast(WeatherInfo.Forecast forecast, Label dateLabel, Label tempLabel, PictureBox iconBox, int x, int y)
         {
             dateLabel.Text = DateTime.Parse(forecast.DtTxt).ToString("dd/MM/yyyy");
             tempLabel.Text = forecast.Main.Temp.ToString("F1") + " °C";
+            tempLabel.ForeColor = Color.Black;
+            tempLabel.Font = new Font(tempLabel.Font, FontStyle.Bold);
+
             string img = "http://openweathermap.org/img/w/" + forecast.Weather[0].Icon + ".png";
-
-            iconBox.Size = new System.Drawing.Size(150, 150); // Example size: 200x200 pixels
-
+            iconBox.Size = new Size(150, 150);
             iconBox.SizeMode = PictureBoxSizeMode.StretchImage;
-
             iconBox.Load(img);
-            dateLabel.Visible = tempLabel.Visible = iconBox.Visible = detailsButton.Visible = true;
+
+            dateLabel.Visible = tempLabel.Visible = iconBox.Visible = true;
         }
 
-        private void detalisBtn1_Click(object sender, EventArgs e) => ShowDetails(0);
-        private void detalisBtn2_Click(object sender, EventArgs e) => ShowDetails(1);
-        private void detalisBtn3_Click(object sender, EventArgs e) => ShowDetails(2);
-        private void detalisBtn4_Click(object sender, EventArgs e) => ShowDetails(3);
-        private void detalisBtn5_Click(object sender, EventArgs e) => ShowDetails(4);
-
-        private void ShowDetails(int index)
+        // ✅ Hàm sinh lời khuyên
+        private string GenerateAdvice(List<double> temps)
         {
-            if (data != null && data.List != null && data.List.Count > 0)
-            {
-                var selectedDay = DateTime.Parse(data.List[0].DtTxt).Date.AddDays(index + 1);
-                var hourlyForecasts = data.List
-                    .Where(x => DateTime.Parse(x.DtTxt).Date == selectedDay)
-                    .ToList();
+            double avgTemp = temps.Average();
 
-                Form3 form = new Form3(selectedDay.ToString("dd/MM/yyyy"), hourlyForecasts);
-                form.Show();
-            }
+            if (avgTemp < 15)
+                return "🌬️ Trời lạnh, bạn nên mặc áo ấm và giữ ấm cơ thể.";
+            else if (avgTemp >= 15 && avgTemp < 25)
+                return "🌤️ Thời tiết khá dễ chịu, bạn có thể ra ngoài thoải mái.";
+            else
+                return "🔥 Trời nóng, hãy uống nhiều nước và tránh ở ngoài quá lâu.";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void temperatureL_Click(object sender, EventArgs e) { }
+
+        private void label1_Click(object sender, EventArgs e) { }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

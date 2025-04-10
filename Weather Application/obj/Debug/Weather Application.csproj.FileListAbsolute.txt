@@ -1,58 +1,3 @@
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.dll
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.xml
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form1.resources
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
-D:\git\Hien\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\WeatherApp.Form1.resources
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.exe
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather Application.pdb
-E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Weather Application.exe.config
-E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Weather Application.exe
-E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Weather Application.pdb
-E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Newtonsoft.Json.dll
-E:\My-Project\chat_app\Weather Application\Weather Application\bin\Debug\Newtonsoft.Json.xml
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
-C:\Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
-C:\Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
-C:\Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
-C:\Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.dll
-C:\Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.xml
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form1.resources
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
-C:\Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.dll
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.xml
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form1.resources
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
-C:\Code\Code chính\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Form2.resources
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\AppWeather.Form3.resources
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\WeatherApp.Form2.resources
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
@@ -62,11 +7,82 @@ D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weat
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form1.resources
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form2.resources
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form3.resources
+D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form4.resources
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
 D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
-D:\laptrinhmang\1GK\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form4.resources
-E:\My-Project\chat_app\Weather Application\Weather Application\obj\Debug\AppWeather.Form4.resources
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form1.resources
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form2.resources
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form3.resources
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\AppWeather.Form4.resources
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
+C:\Users\Admin\Downloads\Nhom3-LapTrinhUngDungXemThoiTiet (1)\Nhom3-LapTrinhUngDungXemThoiTiet\Source-Code\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe.config
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.exe
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\bin\Debug\Weather Application.pdb
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form1.resources
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\WeatherApp.Form2.resources
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.exe
+C:\Users\Admin\Desktop\CSharp-winform-weatherApp\Weather Application\obj\Debug\Weather Application.pdb
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Weather Application.exe.config
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Weather Application.exe
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Weather Application.pdb
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Newtonsoft.Json.dll
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Newtonsoft.Json.xml
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\WeatherApp.Form1.resources
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\WeatherApp.Form2.resources
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather .F6EF7EE9.Up2Date
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.exe
+E:\Nhom08-LapTrinhUngDungXemThoiTiet\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.pdb
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Weather Application.exe.config
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Weather Application.exe
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Weather Application.pdb
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Newtonsoft.Json.dll
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\bin\Debug\Newtonsoft.Json.xml
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\WeatherApp.Form1.resources
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\WeatherApp.Form2.resources
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.csproj.CopyComplete
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.exe
+D:\Năm 3\Học kì 2\Lập trình mạng\Nhom08-LapTrinhUngDungXemThoiTiet-SourceCode\Weather Application\obj\Debug\Weather Application.pdb
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\bin\Debug\Weather Application.exe.config
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\bin\Debug\Weather Application.exe
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\bin\Debug\Weather Application.pdb
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\bin\Debug\Newtonsoft.Json.dll
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\bin\Debug\Newtonsoft.Json.xml
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\Weather Application.csproj.AssemblyReference.cache
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\WeatherApp.Form1.resources
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\WeatherApp.Form2.resources
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\Weather_Application.Properties.Resources.resources
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\Weather Application.csproj.GenerateResource.cache
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\Weather Application.csproj.CoreCompileInputs.cache
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\Weather Application.csproj.CopyComplete
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\Weather Application.exe
+D:\Năm 3\Học kì 2\Lập trình mạng\Dự Báo thời tiết\Weather Application\obj\Debug\Weather Application.pdb
