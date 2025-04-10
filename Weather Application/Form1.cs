@@ -6,7 +6,7 @@ using System.Net;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using static WeatherApp.WeatherInfo;
-
+//
 namespace WeatherApp
 {
     public partial class Form1 : Form
