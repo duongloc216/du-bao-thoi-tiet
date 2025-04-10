@@ -20,7 +20,7 @@ namespace WeatherApp
             InitializeComponent();
             this.cityName = City;
         }
-
+//
         private async void Form2_Load(object sender, EventArgs e)
         {
             await prepareForecastToDisplay(cityName);
